@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap%27');
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans"  
+}
+html,body{
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    padding: 10px 2%;
+    background-color: #FDA153;
+}
+body{
+    background-color: #fde2a1;
+}
+.logo1{
+    float: left;
+    width: 100px;
+    height: 30px;
+    background-image: url(../image/Logo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-color: red;*/
+}
+
+.menu{
+    text-align: center;
+    padding-right: 80px;
+}
+
+.menu a{
+    text-decoration: none;
+    margin-right: 25px;
+    position: relative;
+    top: 7px;
+    color: black;
+}
+
+main{
+    width: 100%;
+    padding: 0 5%;
+}
+
+.banner{
+    height: 400px;
+    background-image: url(../image/banner.jpg);
+    /*background-color: antiquewhite;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-container{
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+    width: 300px;
+    height: 107%;
+    position: relative;
+    top: -5%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.61);
+    box-shadow: 11px 10px 28px -2px rgba(0,0,0,1);
+}
+
+.form-container h2{
+    font-weight: normal;
+    padding: 10px;
+    color: black;
+    font-size: 21px;
+    background-color: rgba(151, 151, 151, 0.74);
+    border-bottom: #3b3b3b solid 1px;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 20px;
+}
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
+.form-container form{
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form p{
+    font-size: 13px;
+    color: #525252;
+    padding-left: 10px;
+}
+
+.form-container form input[type=text]{
+    width: 90%;
+    border: 1px solid #ccc;
+    height: 30px;
+    padding: 15px;
+    margin: 10px;
+    line-height: 45px;
+}
+
+.form-container form input[type=button]{
+    background-color: #FABF46;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+}
+
+.form-container form input[type=button]:hover{
+    background-color: #E3C54B;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,1);
+}
+
+section{
+    height: auto;
+    background-color: #E3D5C1;
+    top: -40px;
+}
+
+
+section .chamada{
+    z-index: 1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section .chamada h2{
+    padding-top: 30px;
+    display: inline-block;
+    
+}
+
+section .chamada h3{
+    margin-top: 40px;
+}
+
+section .chamada p{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.seta{
+    height: 0px;
+    text-align: center;
+}
+
+.seta img{
+    width: 30px;
+    position: relative;
+    top: -15px;
+}
+
+.mozaico1{
+    background-color: #4D6CB0;
+    padding: 30px 10px 10px 10px;
+    display: flex;
+}
+
+.mozaico1 p{
+    width: 40%;
+    padding: 20px;
+}
+.mozaico1 img{
+    width: 60%;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+}
+
+.mozaico2{
+    background-color: #4D6CB0;
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mozaico2 p{
+    float: right;
+    width: 40%;
+    padding: 20px;
+}
+.mozaico2 img{
+    width: 60%;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+}
+.map-wraper{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #4AABBD;
+    text-align: center;
+    position: relative;
+}
+.map-wraper h2{
+    color: #3b3b3b;
+}
+
+.map-wraper2{
+    width: 50%;
+    height: 300px;
+    margin: 10px;
+    margin-left: 25%;
+    position: static;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #A2BEFC;
+    display: inline-flex;
+    padding: 10px;
+}
+footer .contato{
+    width: 33.3%;
+}
+footer .direito{
+    width: 33.3%;
+    margin-left: 20%;
+
+}
+footer .autor{
+    width: 33.3%;
+    margin-left: 20%;
+
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    .mozaico1 p{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mozaico1{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .mozaico2{
+        display: block;
+        width: 100%;
+        padding: 0 auto;
+        text-align: center;
+    }
+    .mozaico2 p{
+        display: block;
+        width: 100%;
+        padding: 0 auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
+    }
+
+    .logo1{
+            margin-top: 10px;
+            float: none;
+            display: inline-block;
+}
+
+    header{
+        display: inline-block;
+        text-align: center;
+    }
+    .menu{
+        display: inline-block;
+        top: -10px;
+        left: 40px;
+        text-align: center;
+        position: relative;
+    }
+}
